@@ -1,4 +1,4 @@
-# Chat with Websites
+# WebTalker - Chat with Websites
 
 A Streamlit application that allows you to interact with website content using conversational AI. By inputting a website URL, the app retrieves its content, processes it into manageable chunks, and enables you to ask questions or have a conversation based on the website's content.
 
