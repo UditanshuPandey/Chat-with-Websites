@@ -18,7 +18,7 @@ def init_groq_model():
     if not groq_api_key:
         raise ValueError("GROQ_API_KEY not found in environment variables.")
     return ChatGroq(
-        groq_api_key=groq_api_key, model_name="llama-3.1-70b-versatile", temperature=0.2
+        groq_api_key=groq_api_key, model_name="llama-3.3-70b-versatile", temperature=0.5
     )
 
 llm_groq = init_groq_model()
@@ -79,8 +79,8 @@ def get_response(user_input):
     return response['answer']
 
 # app config
-st.set_page_config(page_title="Chat with websites", page_icon="🤖")
-st.title("Chat with websites")
+st.set_page_config(page_title="WebTalker - Chat with Websites", page_icon="🤖")
+st.title("WebTalker - Chat with Websites")
 
 # sidebar
 with st.sidebar:
